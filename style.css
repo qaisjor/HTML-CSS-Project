@@ -83,7 +83,7 @@ nav ul li a:hover{
 }
 
 
-@media (max-width : 888px){
+@media (max-width : 768px){
     nav{
         display: none;
 
@@ -126,7 +126,7 @@ nav ul li a:hover{
 /* main section  */
 .main{
     height: 100vh ;
-    background-image: url(images/R.jpg);
+    background-image: url(images/PicsArt_11-01-11.46.35.jpg);
     background-size: cover;
     
 }
@@ -138,27 +138,54 @@ nav ul li a:hover{
 .main .content {
     position: absolute;
     color: white;
-    top:50%;
-    left: 50%;
+    top:40%;
+    left: 251px;
     transform: translateX(-50%);
-    width: 80%;
+    padding: 30px;
+    border-top: 4px solid white;
+    border-left: 4px solid;
 }
 
-.main .content h1 {
-    font-size: 2.5rem;
-    border-top:3px solid white ;
-    border-bottom: 3px solid white;
-    padding: 10px 0px;
-    transition: .3s;
-    cursor: pointer;
-    text-align: center;
+@media (min-width:480px) and (max-width:768px){
+   .main .content {
+      left: 238px;
+      top:30%;
+   }
+   
+}
+@media (max-width :480px){
+   .main .content {
+      left: 160px;
+      top:20%;
+   }
+}
+.main .content .name {
+    letter-spacing: 10px;
+    font-size: 30px;
 }
 
-.main .content h1:hover{
-    color: var(--primarycolor);
+.main .content .job {
+   font-size: 40px ;
+   margin-top: 30px;
+   letter-spacing: 4px;
 }
 
+.main .content button {
+   margin-top:30px;
+   padding: 10px 40px;
+   font-size:30px;
+   color:var(--primarycolor);
+   border-radius: 10px;
+   font-weight: bold;
+   transition: .3s;
+   cursor: pointer;
+}
 
+.main .content button:hover{
+   background-color: var(--primarycolor);
+   color: white;
+   transform: scale(1.07);
+}
 
 /* main section */
 
@@ -197,7 +224,7 @@ border-radius: 50%;
     } 
     
  
-    @media (max-width : 400px){
+    @media (max-width : 480px){
         .main-heading {
             font-size: 20px;
         }
@@ -227,7 +254,7 @@ border-radius: 50%;
     transition: .3s;
  }
  .education .container .card .image {
-    height: 70%;
+    height: 60%;
  }
  .education .container .card:hover{
     transform: scale(1.05);
@@ -388,8 +415,20 @@ border-radius: 50%;
     padding: 10px;
     border-radius: 10px;
     width: 45%;
+    transition: .3s;
  }
-
+ .tech-content .box{
+   transition: .3s;
+ }
+ .tech-content .box:hover{
+   box-shadow: 5px 5px 10px gray ;
+ }
+ .tech-content .box img{
+   transition:.3s ;
+ }
+ .tech-content .box:hover img {
+   transform: rotate(180deg);
+ }
  @media (max-width:480px){
     .language .container {
         flex-direction: column;
@@ -410,7 +449,7 @@ border-radius: 50%;
  }
 
  .language .container div p progress{
-    background-color: gray;
+    
  }
  /* end language  */
 
@@ -436,7 +475,7 @@ border-radius: 50%;
  }
  .refernce .container .card .image {
     height: 70%;
-    padding:20px;
+    padding:20px 60px;
     overflow: hidden;
     
  }
@@ -452,8 +491,9 @@ border-radius: 50%;
 
  .refernce .container .text{
     padding:10px;
+    text-align: center;
  }
- @media (max-width:500px){
+ @media (max-width:480px){
     .refernce .container {
         flex-direction: column;
         gap: 20px;
@@ -487,7 +527,7 @@ border-radius: 50%;
     transition: .3s;
     
  }
-  
+   
  footer .container div {text-align: center;}
  footer .container div span {
     font-size: 30px;
